@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id = "heading" onclick="changeText()">JavaScript</h1>
+        <p id="addition"></p>
+
+        <script>
+            //addNumbers(10, 7); //calling the function(caller)
+            document.getElementById("addition").innerHTML = addNumbers(10, 20); //outputing the function(the results of the function)
+            function changeText(){
+                if(document.getElementById("heading").innerHTML =='JavaScript'){
+                    document.getElementById("heading").innerHTML='is awesome' 
+                }else {
+                    (document.getElementById("heading").innerHTML='JavaScript')
+                }
+            }
+         //The brackets of the function actually recieve data(The data the fuction needs to recieve)
+            function addNumbers(num1, num2){
+                return num1 + num2;    //send back to the caller
+            }
+
+        </script>
+    </body>
+</html>
